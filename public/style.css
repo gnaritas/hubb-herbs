@@ -1,0 +1,127 @@
+/* Hubb.Herbs — custom design v2 (apothecary: parchment + forest green + copper, Georgia editorial serif) — unique to this build */
+:root{
+  --parch:#f6f1e3; --parch2:#efe7d3; --card:#fbf7ec; --line:#d9cfb4;
+  --ink:#22301f; --soft:#6f7a5e;
+  --green:#1f3a2e; --green2:#2c4f3d; --copper:#b7683b; --copper2:#8f4f2a;
+  --gold:#c99a3f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:16px/1.65 Georgia,"Times New Roman",serif;color:var(--ink);background:var(--parch)}
+.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+a{color:var(--copper2)}
+.skip{position:absolute;left:-60vw;top:0;background:var(--green);color:var(--parch);padding:.6rem 1rem;border-radius:0 0 .5rem 0;z-index:9}
+.skip:focus{left:0}
+.banner{background:var(--green);color:#d8e2cd;text-align:center;font-size:.83rem;padding:.45rem .8rem;font-family:ui-monospace,Menlo,monospace}
+.banner a{color:#eec98f}
+
+/* header — parchment bar */
+.top{background:var(--parch);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:8}
+.top-in{max-width:1100px;margin:0 auto;padding:.8rem 1.2rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.logo{display:flex;align-items:baseline;gap:.45rem;text-decoration:none;color:var(--green)}
+.logo svg{align-self:center}
+.logo b{font-size:1.45rem;letter-spacing:.01em}
+.logo b i{font-style:normal;color:var(--copper)}
+.top nav{margin-left:auto;display:flex;gap:.15rem;flex-wrap:wrap;align-items:center}
+.top nav a{color:var(--green2);text-decoration:none;font-size:.78rem;font-family:ui-monospace,Menlo,monospace;text-transform:uppercase;letter-spacing:.12em;padding:.4rem .55rem;border-radius:.35rem}
+.top nav a:hover{background:var(--parch2);color:var(--copper2)}
+.cta{display:inline-block;background:var(--copper);color:#fdf9ef !important;font-weight:700;text-decoration:none;border-radius:.4rem;padding:.55rem 1.1rem;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;font-family:ui-monospace,Menlo,monospace}
+.cta:hover{background:var(--copper2)}
+
+/* hero — editorial split with botanical */
+.hero{background:
+  radial-gradient(900px 420px at 100% 0%, var(--parch2) 0 55%, transparent 70%),
+  var(--parch)}
+.hero-in{max-width:1100px;margin:0 auto;padding:3.6rem 1.2rem 3rem;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.85fr);gap:2rem;align-items:center}
+.kicker{font-family:ui-monospace,Menlo,monospace;font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--copper2)}
+.hero h1{font-size:clamp(2.4rem,5.8vw,4.1rem);line-height:1.05;color:var(--green);margin:.7rem 0 0;max-width:20ch}
+.hero h1 i{font-style:italic;color:var(--copper2)}
+.rule{width:120px;height:3px;background:var(--copper);margin:1.2rem 0}
+.hero .tag{color:#42503a;font-size:1.1rem;max-width:46ch}
+.hero-note{margin-top:1rem;font-size:.9rem;color:var(--soft)}
+.cta-row{margin-top:1.5rem;display:flex;gap:.7rem;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:.45rem;padding:.8rem 1.4rem;font-size:.9rem;font-family:ui-monospace,Menlo,monospace;letter-spacing:.05em;text-transform:uppercase;border:1px solid transparent}
+.btn.green{background:var(--green);color:var(--parch)}
+.btn.green:hover{background:var(--green2)}
+.btn.copper{background:var(--copper);color:#fdf9ef}
+.btn.copper:hover{background:var(--copper2)}
+.btn.outline{border-color:var(--green2);color:var(--green2);background:transparent}
+.btn.outline:hover{background:var(--green);color:var(--parch)}
+.botanical{display:block;margin:0 auto;max-width:100%}
+
+/* body */
+main{max-width:1100px;margin:0 auto;padding:0 1.2rem}
+h2{font-size:1.8rem;color:var(--green);margin:2.6rem 0 1rem;font-weight:400}
+h2 em{color:var(--copper2)}
+.eyebrow{font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--copper2);margin-top:2.2rem}
+.fine{font-size:.83rem;color:var(--soft);margin-top:.6rem;font-family:ui-monospace,Menlo,monospace}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-top:1rem}
+.cd-card{display:block;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--green2);border-radius:.4rem;padding:1.15rem 1.25rem;text-decoration:none;color:var(--ink)}
+.cd-card:hover{border-left-color:var(--copper);box-shadow:0 8px 20px rgba(34,48,31,.1)}
+.cd-card h3{font-size:1.2rem;color:var(--green);margin-bottom:.35rem;font-weight:400}
+.pill{display:inline-block;font-family:ui-monospace,Menlo,monospace;font-size:.66rem;border:1px solid var(--line);border-radius:.3rem;padding:.08rem .45rem;color:var(--soft);text-transform:uppercase;letter-spacing:.1em;background:var(--parch)}
+.more{display:inline-block;margin-top:.6rem;font-size:.74rem;text-transform:uppercase;letter-spacing:.18em;color:var(--copper2);font-weight:700;font-family:ui-monospace,Menlo,monospace}
+
+/* find strip + addr + map */
+.addr{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--copper);border-radius:.4rem;padding:1rem 1.2rem;margin-bottom:.9rem;line-height:1.7}
+.two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;align-items:start;margin-top:1rem}
+.map-frame{border:1px solid var(--line);border-radius:.5rem;overflow:hidden;background:var(--card);box-shadow:0 6px 18px rgba(34,48,31,.08)}
+.map-frame iframe{display:block;width:100%;height:330px;border:0}
+.quote{background:var(--green);color:#e6edda;border-radius:.5rem;padding:1.3rem 1.4rem;margin-top:1rem}
+.quote p{font-size:1.1rem;font-style:italic}
+.quote cite{display:block;margin-top:.4rem;color:#a8bb96;font-style:normal;font-size:.82rem;font-family:ui-monospace,Menlo,monospace}
+
+/* detail header — green plate */
+.dhero{background:var(--green);color:#e9efdf;margin:0 -1.2rem;padding:2.6rem 1.4rem 2.2rem}
+.dhero .kicker{color:#eec98f}
+.dhero h1{color:var(--parch);font-size:clamp(1.8rem,4.4vw,3rem);line-height:1.1;margin-top:.5rem;max-width:24ch;font-weight:400}
+.dhero h1 i{color:#eec98f;font-style:italic}
+.dhero p{margin-top:.7rem;color:#c4d1b4;max-width:60ch;font-size:1.02rem}
+.crumb{font-size:.76rem;color:#93a683;margin-top:1.2rem;font-family:ui-monospace,Menlo,monospace}
+.crumb a{color:#c8d6b8}
+
+/* faq */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:.4rem;padding:.9rem 1.15rem;margin-bottom:.7rem}
+.faq summary{font-weight:700;cursor:pointer;color:var(--green)}
+.faq details p{margin-top:.5rem}
+
+/* quote band */
+.cta-band{background:var(--green2);color:#eef3e6;border-radius:.6rem;padding:2.2rem 1.6rem;margin:2.6rem 0;text-align:center}
+.cta-band h2{color:var(--parch);margin:0 0 .5rem}
+.cta-band p{max-width:52ch;margin:0 auto;color:#c4d1b4}
+.cta-band .cta-row{justify-content:center;margin-top:1.2rem}
+.cta-band .btn.outline{border-color:#7f9470;color:#e9efdf}
+.cta-band .btn.outline:hover{background:var(--parch);color:var(--green)}
+
+/* claim strip block */
+.claim{background:var(--parch2);border:1px dashed var(--copper);border-radius:.6rem;padding:1.5rem 1.4rem;margin-bottom:2rem}
+.claim h2{margin-top:0}
+
+/* form */
+.cform{display:flex;flex-direction:column;gap:.45rem;background:var(--card);border:1px solid var(--line);border-radius:.5rem;padding:1.25rem}
+.cform label{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--soft);margin-top:.45rem;font-family:ui-monospace,Menlo,monospace}
+.cform input,.cform textarea{font:inherit;padding:.65rem .8rem;border:1px solid var(--line);border-radius:.35rem;background:var(--parch);color:var(--ink);width:100%}
+.cform input:focus,.cform textarea:focus{outline:2px solid var(--green2);border-color:var(--green2)}
+.cform button{margin-top:.8rem;border:0;cursor:pointer}
+.cform .fine{margin-top:.7rem}
+
+.pl{margin:.8rem 0 .4rem 1.2rem;display:grid;gap:.65rem}
+.pl li{max-width:78ch}
+
+/* footer — deep green */
+.foot{background:var(--green);color:#b9c7a8;margin-top:2.4rem;padding:2.2rem 1.2rem;text-align:center;border-top:3px solid var(--copper)}
+.nap-name{font-size:1.5rem;color:var(--parch);letter-spacing:.02em}
+.nap-name i{color:#eec98f;font-style:normal}
+.nap div{margin:.3rem auto;max-width:50ch}
+.nap a{color:#eec98f}
+.studio{margin-top:1.2rem;font-size:.8rem;color:#8ba077;font-family:ui-monospace,Menlo,monospace}
+.studio a{color:#c8d6b8}
+
+@media (max-width:900px){
+  .hero-in{grid-template-columns:1fr}
+  .botanical{max-width:280px;margin-top:1rem}
+}
+@media (max-width:640px){
+  .top nav{order:3;flex:1 0 100%;margin-left:0}
+  .cta{margin-left:auto}
+}

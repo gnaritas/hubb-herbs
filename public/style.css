@@ -114,8 +114,8 @@ h2 em{color:var(--copper2)}
 .nap-name i{color:#eec98f;font-style:normal}
 .nap div{margin:.3rem auto;max-width:50ch}
 .nap a{color:#eec98f}
-.studio{margin-top:1.2rem;font-size:.8rem;color:#8ba077;font-family:ui-monospace,Menlo,monospace}
-.studio a{color:#c8d6b8}
+.footline{margin-top:1.2rem;font-size:.8rem;color:#8ba077;font-family:ui-monospace,Menlo,monospace}
+.footline a{color:#c8d6b8}
 
 @media (max-width:900px){
   .hero-in{grid-template-columns:1fr}

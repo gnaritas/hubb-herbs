@@ -17,7 +17,7 @@ a{color:var(--copper2)}
 
 /* header — parchment bar */
 .top{background:var(--parch);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:8}
-.top-in{max-width:1100px;margin:0 auto;padding:.8rem 1.2rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.top-in{max-width:1100px;margin:0 auto;padding:.8rem 1.2rem;display:flex;align-items:center;gap:1rem .4rem;flex-wrap:wrap}
 .logo{display:flex;align-items:baseline;gap:.45rem;text-decoration:none;color:var(--green)}
 .logo svg{align-self:center}
 .logo b{font-size:1.45rem;letter-spacing:.01em}
@@ -71,8 +71,9 @@ h2 em{color:var(--copper2)}
 .quote p{font-size:1.1rem;font-style:italic}
 .quote cite{display:block;margin-top:.4rem;color:#a8bb96;font-style:normal;font-size:.82rem;font-family:ui-monospace,Menlo,monospace}
 
-/* detail header — green plate */
-.dhero{background:var(--green);color:#e9efdf;margin:0 -1.2rem;padding:2.6rem 1.4rem 2.2rem}
+/* detail header — green plate: full-bleed band like header/footer; text aligned to the 1100px content column */
+.dhero{background:var(--green);color:#e9efdf;padding:2.6rem 1.2rem 2.2rem}
+.dhero>*{max-width:1100px;margin-left:auto;margin-right:auto;padding:0 1.2rem}
 .dhero .kicker{color:#eec98f}
 .dhero h1{color:var(--parch);font-size:clamp(1.8rem,4.4vw,3rem);line-height:1.1;margin-top:.5rem;max-width:24ch;font-weight:400}
 .dhero h1 i{color:#eec98f;font-style:italic}
@@ -94,7 +95,7 @@ h2 em{color:var(--copper2)}
 .cta-band .btn.outline:hover{background:var(--parch);color:var(--green)}
 
 /* claim strip block */
-.claim{background:var(--parch2);border:1px dashed var(--copper);border-radius:.6rem;padding:1.5rem 1.4rem;margin-bottom:2rem}
+.claim{background:var(--parch2);border:1px dashed var(--copper);border-radius:.6rem;padding:1.5rem 1.4rem;margin-top:2.2rem;margin-bottom:2rem}
 .claim h2{margin-top:0}
 
 /* form */
@@ -121,7 +122,7 @@ h2 em{color:var(--copper2)}
   .hero-in{grid-template-columns:1fr}
   .botanical{max-width:280px;margin-top:1rem}
 }
-@media (max-width:640px){
+@media (max-width:1000px){
   .top nav{order:3;flex:1 0 100%;margin-left:0}
   .cta{margin-left:auto}
 }
